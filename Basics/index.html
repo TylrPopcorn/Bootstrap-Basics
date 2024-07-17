@@ -1,11 +1,12 @@
 <!-- https://getbootstrap.com/docs/4.5/getting-started/introduction/ -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bootstrap Basics</title>
-    <!-- stylesheet that bootstrap uses -->
+    <!-- stylesheet that bootstrap uses (MUST HAVE) -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -18,16 +19,24 @@
   </head>
 
   <body>
+    <!-- how to make a container (can be any element)-->
+    <!-- https://getbootstrap.com/docs/4.5/layout/overview/ -->
     <div class="container">
-      <!-- how to make a container -->
+      <!-- DIFFERENT SIZE CONTAINER -->
+      <!-- <div class="container-md"></div> (medium container)-->
 
       <!-- Different class/styles that bootstrap can use -->
+      <!-- https://getbootstrap.com/docs/4.5/content/typography/#display-headings -->
+      <!-- https://getbootstrap.com/docs/4.5/utilities/colors/ -->
       <h1 class="display-1 text-center text-primary">Bootstrap Playground</h1>
       <h2 class="display-4">
+        <!-- https://getbootstrap.com/docs/4.5/components/badge/ -->
         Buttons <span class="badge badge-success badge-pill">New</span>
       </h2>
 
-      <!-- button styles -->
+      <!-- buttons &  styles -->
+      <!-- https://getbootstrap.com/docs/4.5/components/buttons/ -->
+      <!-- https://getbootstrap.com/docs/4.5/components/buttons/#outline-buttons -->
       <button type="button" class="btn btn-primary">Primary</button>
       <button type="button" class="btn btn-success">Success</button>
       <button type="button" class="btn btn-info">Info</button>
@@ -39,6 +48,7 @@
         Success Disabled
       </button>
       <button class="btn btn-primary">
+        <!-- https://getbootstrap.com/docs/4.5/components/badge/ -->
         Updates <span class="badge badge-light">9</span>
       </button>
       <h3>Button Groups</h3>
@@ -49,17 +59,21 @@
       </div>
 
       <!-- Alert styles -->
+      <!-- https://getbootstrap.com/docs/4.5/components/alerts/ -->
       <h3>Alerts</h3>
       <div class="alert alert-danger alert-dismissible fade show" role="alert">
         <h4 class="alert-heading">Oh No!</h4>
         Danger! You are about to end the world as we know it!
+        <!-- related to screen readers (aria)-->
         <button aria-label="Close" class="close" data-dismiss="alert">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
 
       <!-- Typography styles -->
+      <!-- https://getbootstrap.com/docs/4.5/content/typography/ -->
       <h2 class="display-4">Typography</h2>
+      <!-- https://getbootstrap.com/docs/4.5/content/typography/#lead -->
       <p class="lead">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eaque,
         in autem cupiditate quasi neque hic minus harum perferendis repellendus
@@ -69,6 +83,8 @@
         placeat, voluptates illo accusantium quam fuga ducimus quaerat minus
         laudantium, quo odit!
       </p>
+
+      <!-- https://getbootstrap.com/docs/4.5/content/typography/#blockquotes -->
       <blockquote class="blockquote text-right">
         <p class="mb-0">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ab sed
