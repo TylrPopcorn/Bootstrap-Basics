@@ -1,4 +1,5 @@
 <!-- https://getbootstrap.com/docs/4.5/layout/grid/ -->
+<!-- GRID ONLY WORKS INSIDE OF A CONTAINER -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -6,12 +7,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bootstrap Basics</title>
+    <!-- stylesheet that bootstrap uses (MUST HAVE) -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
+    <!------------------------>
+    <!-- custom style sheet -->
     <link rel="stylesheet" href="app.css" />
   </head>
 
@@ -19,17 +23,21 @@
     <div class="container">
       <!-- HEADING -->
       <h1 class="display-1 text-center text-primary">The Grid System</h1>
+
       <!-- HOW TO MAKE A ROW -->
+      <!-- https://getbootstrap.com/docs/4.5/layout/grid/#how-it-works -->
       <div class="row">
         <div class="col-2 bg-success">I AM 2 UNITS</div>
         <div class="col-8 bg-danger">I AM 8 UNITS</div>
         <div class="col-2 bg-success">I AM 2 UNITS</div>
       </div>
+
       <div class="row">
         <div class="col-3 bg-info">I AM 3 UNITS</div>
         <div class="col-6 bg-warning">I AM 6 UNITS</div>
         <div class="col-3 bg-info">I AM 3 UNITS</div>
       </div>
+
       <div class="container">
         <!-- ROW NESTED WITHIN A CONTAINER -->
         <div class="row">
@@ -39,6 +47,7 @@
         </div>
       </div>
 
+      <!----------------------------------------->
       <!-- RESPONSIVE DESIGN / GRID -->
       <h2 class="display-4">Responsive Grid</h2>
       <div class="row">
@@ -48,18 +57,21 @@
           itaque illo nemo dolorem aperiam. Rerum magnam eveniet dicta vel rem
           dolorem voluptatem.
         </div>
+
         <div class="col-md-6 col-xl-3 bg-success">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
           consequatur voluptatem eligendi ducimus. Expedita quia omnis, at
           itaque illo nemo dolorem aperiam. Rerum magnam eveniet dicta vel rem
           dolorem voluptatem.
         </div>
+
         <div class="col-md-6 col-xl-3 bg-info">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
           consequatur voluptatem eligendi ducimus. Expedita quia omnis, at
           itaque illo nemo dolorem aperiam. Rerum magnam eveniet dicta vel rem
           dolorem voluptatem.
         </div>
+
         <div class="col-md-6 col-xl-3 bg-success">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
           consequatur voluptatem eligendi ducimus. Expedita quia omnis, at
@@ -67,6 +79,7 @@
           dolorem voluptatem.
         </div>
       </div>
+
       <h2>Grid Alignment</h2>
       <div class="row align-items-center">
         <div class="col-3 bg-danger">
@@ -74,6 +87,7 @@
           quam minus recusandae nisi culpa, in eius beatae quae blanditiis
           aliquam. Eum cumque ut atque fuga dolorem fugiat est suscipit.
         </div>
+
         <div class="col-3 bg-warning">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quos
           quam minus recusandae nisi culpa, in eius beatae quae blanditiis
@@ -86,6 +100,7 @@
           quos nesciunt ratione aliquam aperiam beatae dolor nam. Iste similique
           sequi vitae nesciunt cumque! Distinctio, assumenda?
         </div>
+
         <div class="col-3 bg-success">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quos
           quam minus recusandae nisi culpa, in eius beatae quae blanditiis
@@ -95,6 +110,7 @@
           sit, voluptates excepturi aspernatur aliquid ullam eaque eum nobis
           hic, delectus corporis!
         </div>
+
         <div class="col-3 bg-info align-self-end">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quos
           quam minus recusandae nisi culpa, in eius beatae quae blanditiis
@@ -145,6 +161,9 @@
         </div>
       </div>
     </div>
+
+    <!----------------------------------------->
+    <!-- Insert this into the bottom of your HTML or BootStrap wont work. -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -160,5 +179,6 @@
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
+    <!-- ------------------------------------------------- -->
   </body>
 </html>
